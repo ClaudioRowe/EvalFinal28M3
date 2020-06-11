@@ -3,134 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Calendario</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        
-        .menu_bar {
-            display: none;
-        }
-        
-        header {
-            width: 100%;
-        }
-        
-        header nav {
-            background: #2f79da;
-            z-index: 1000;
-            max-width: 1000px;
-            width: 95%;
-            margin: 20px auto;
-        }
-        
-        header nav ul {
-            list-style: none;
-        }
-        
-        header nav ul li {
-            display: inline-block;
-            position: relative;
-        }
-        
-        header nav ul li:hover {
-            background: #ffffff;
-        }
-        
-        header nav ul li a {
-            color: #fff;
-            display: block;
-            text-decoration: none;
-            padding: 20px;
-        }
-        
-        header nav ul li a span {
-            margin-right: 10px;
-        }
-        
-        @media screen and (max-width: 800px) {
-            body {
-                padding-top: 80px;
-            }
-            .menu_bar {
-                display: block;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                background: #2f79da;
-            }
-            .menu_bar .bt-menu {
-                display: block;
-                padding: 20px;
-                text-align: center;
-                color: #ffffff;
-                overflow: hidden;
-                font-size: 25px;
-                font-weight: bold;
-                text-decoration: none;
-            }
-            .menu_bar span {
-                float: right;
-                font-size: 40px;
-            }
-            header nav {
-                width: 80%;
-                height: calc(100% - 80px);
-                position: fixed;
-                right: 100%;
-                margin: 0;
-                overflow: scroll;
-            }
-            header nav ul li {
-                display: block;
-                border-bottom: 1px solid #ffffff;
-            }
-            header nav ul li a {
-                display: block;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="Slidebars-2.0.2/dev/slidebars.css">
+    <script src="Slidebars-2.0.2/dev/slidebars.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/main.js"></script>
 </head>
 
-<header>
+<body>
 
-    <div class="menu_bar">
-        <a href="#" class="bt-menu">Menú</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#"><span ></span>Inicio</a></li>
-            <li><a href="#"><span ></span>Quiénes somos</a></li>
-            <li><a href="#"><span ></span>Contenido 1</a></li>
-            <li><a href="#"><span ></span>Contenido 2</a></li>
-            <li><a href="#"><span ></span>Contenido 3</a></li>
-            <li><a href="#"><span ></span>Contenido 4</a></li>
-            <li><a href="#"><span ></span>Contenido 5</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper" canvas="container">
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu">Menú</a>
 
-    <h1>Bienvenid@ a Calendario</h1>
-    <p>Calendario es una aplicación pensada para el humano de la vida ajetreada de hoy. Hemos combinado las bondades de un calendario junto a una to do list, una agenda y un planificador para hacer de nuestros días algo manejable en nuestro celular inteligente.</p>
-    <header>
+            </div>
 
+            <nav>
+                <ul>
+                    <li><a href="#"><span ></span>Inicio</a></li>
+                    <li><a href="#"><span ></span>Quiénes somos</a></li>
+                    <li><a href="#"><span ></span>Contenido 1</a></li>
+                    <li><a href="#"><span ></span>Contenido 2</a></li>
+                    <li><a href="#"><span ></span>Contenido 3</a></li>
+                    <li><a href="#"><span ></span>Contenido 4</a></li>
+                    <li><a href="#"><span ></span>Contenido 5</a></li>
+                </ul>
+            </nav>
+
+
+            <h1>Bienvenid@ a Calendario</h1>
+            <p>Calendario es una aplicación pensada para el humano de la vida ajetreada de hoy. Hemos combinado las bondades de un calendario junto a una to do list, una agenda y un planificador para hacer de nuestros días algo manejable en nuestro celular
+                inteligente.
+            </p>
+        </header>
+
+        <main>
+            <button id="sld3">Barra</button>
+        </main>
 
 
         <footer>
             <p>Desarrollado por:</p>
         </footer>
+    </div>
 
-        </body>
+    <div off-canvas="id-1 left reveal">
+        <ul>
+            <li>Hola</li>
+            <li>Chao</li>
+        </ul>
+    </div>
+
+    <div off-canvas="id-2 right push">
+        <ul>
+            <li>Hola</li>
+            <li>Chao</li>
+        </ul>
+    </div>
+
+    <div off-canvas="id-3 top overlay" class="custom-fluid-width">
+        <container>
+            <h2>Login</h2>
+            <form class="card mb-4 box-shadow" style="width: 400px">
+
+                <label for="ingreso">Usuario o e-mail</label><br>
+                <input type="text" id="ingreso" name="ingreso"><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Ingresar"><br>
+                <label for="recordar">Recordar clave</label>
+                <input type="checkbox" id="checkbox" name="recordar">
+            </form>
+        </container>
+    </div>
+
+    <div off-canvas="id-4 bottom shift">
+        <ul>
+            <li>Hola</li>
+            <li>Chao</li>
+        </ul>
+    </div>
+</body>
 
 </html>

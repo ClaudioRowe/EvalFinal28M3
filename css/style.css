@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background: #2f79da;
+    z-index: 1000;
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li:hover {
+    background: #ffffff;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+.custom-fluid-width {
+    width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 80px;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #2f79da;
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    header nav {
+        width: 40%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid #ffffff;
+    }
+    header nav ul li a {
+        display: block;
+    }
+}
