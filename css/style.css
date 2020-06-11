@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+}
+
 .menu_bar {
     display: none;
 }
@@ -50,6 +54,55 @@ header nav ul li a span {
     width: 20%;
 }
 
+.custom-fluid-height {
+    height: 22%;
+}
+
+#ingreso,
+#password {
+    height: 20px;
+    padding: 1px;
+}
+
+#ingresar {
+    padding: 0px;
+    margin: 0px;
+    height: 22px;
+    font-size: 13px;
+}
+
+#hlogin {
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#formaLogin {
+    margin: auto;
+    background-color: grey;
+}
+
+#checkbox {
+    display: inline;
+}
+
+#labRecordar {
+    text-align: left;
+    font-size: 10px;
+    display: flex;
+}
+
+.inLogin {
+    font-family: monospace;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#formaLogin {
+    width: 20vw;
+}
+
 @media screen and (max-width: 800px) {
     body {
         padding-top: 80px;
@@ -89,5 +142,11 @@ header nav ul li a span {
     }
     header nav ul li a {
         display: block;
+    }
+    .custom-fluid-width {
+        width: 45%;
+    }
+    #formaLogin {
+        width: 41vw;
     }
 }
