@@ -1,12 +1,61 @@
-/* Todas las páginas */
+/* Todos los archivos */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .wrapper {
     max-width: 800px;
     margin: auto;
 }
 
-header h1 {
+h1 {
     text-align: center;
+    margin-top: 40px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background: #2f79da;
+    z-index: 1000;
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li:hover {
+    background: #ffffff;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
 }
 
 
@@ -36,7 +85,7 @@ header h1 {
 }
 
 
-/* Lista - Tablero */
+/* Tablero */
 
 .board {
     position: relative;
@@ -140,5 +189,125 @@ header h1 {
     }
     .board-column {
         width: 95%;
+    }
+}
+
+
+/* Login */
+
+.custom-fluid-width {
+    width: 100%;
+}
+
+.custom-fluid-height {
+    height: 130px;
+}
+
+#ingreso,
+#password {
+    height: 20px;
+    padding: 1px;
+}
+
+#ingresar {
+    padding: 0px;
+    margin: 0px;
+    height: 22px;
+    font-size: 13px;
+}
+
+#hlogin {
+    margin-top: 4px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-left: 8.8vw;
+}
+
+#formaLogin {
+    margin: auto;
+    background-color: grey;
+}
+
+#checkbox {
+    display: inline;
+}
+
+#labRecordar {
+    text-align: left;
+    font-size: 10px;
+    display: flex;
+}
+
+.inLogin {
+    font-family: monospace;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#formaLogin {
+    width: 20vw;
+    float: left;
+}
+
+
+/* Regla poco específica, revisar y agregar selector correcto */
+
+
+/* 
+p {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+*/
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 80px;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #2f79da;
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    header nav {
+        width: 40%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid #ffffff;
+    }
+    header nav ul li a {
+        display: block;
+    }
+    .custom-fluid-width {
+        width: 45%;
+    }
+    #formaLogin {
+        width: 41vw;
     }
 }
