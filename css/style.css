@@ -1,3 +1,5 @@
+/* Todas las páginas */
+
 .wrapper {
     max-width: 800px;
     margin: auto;
@@ -34,7 +36,7 @@ header h1 {
 }
 
 
-/* Tablero */
+/* Lista - Tablero */
 
 .board {
     position: relative;
@@ -133,9 +135,6 @@ header h1 {
 }
 
 @media (max-width: 600px) {
-    .board-item-content {
-        text-align: center;
-    }
     .board-item-content p {
         display: none;
     }
