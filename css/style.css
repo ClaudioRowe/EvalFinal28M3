@@ -11,11 +11,19 @@ h1 {
     margin-top: 40px;
 }
 
+#headins {
+    margin-bottom: 10vh;
+}
+
+.ins {
+    margin-bottom: 5vh;
+}
+
 .menu_bar {
     display: none;
 }
 
-header {
+header #headindex {
     width: 100%;
 }
 
@@ -112,6 +120,52 @@ p {
     font-size: 22px;
     line-height: 28px;
     text-align: center;
+}
+
+.h2ins {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+h3 .h2ins {
+    margin-bottom: 5vh;
+}
+
+.hins {
+    margin-top: 5vh;
+    margin-right: 10vw;
+}
+
+.ins {
+    margin-top: 5vh;
+    width: 99vw;
+}
+
+#uno {
+    margin: auto;
+    display: inline;
+    max-width: 50%;
+    margin-left: 20vw;
+}
+
+#dos {
+    margin: auto;
+    display: inline;
+    max-width: 40%;
+    margin-left: 7vw;
+}
+
+#tres {
+    margin: auto;
+    display: inline;
+    max-width: 20%;
+    margin-left: 17vw;
+}
+
+h4 .hins {
+    display: inline;
+    margin-right: 18vw;
+    padding-top: 4vh;
 }
 
 @media screen and (max-width: 800px) {
