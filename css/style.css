@@ -8,6 +8,7 @@
 
 h1 {
     text-align: center;
+    margin-top: 40px;
 }
 
 .menu_bar {
@@ -51,11 +52,11 @@ header nav ul li a span {
 }
 
 .custom-fluid-width {
-    width: 20%;
+    width: 100%;
 }
 
 .custom-fluid-height {
-    height: 22%;
+    height: 130px;
 }
 
 #ingreso,
@@ -74,8 +75,8 @@ header nav ul li a span {
 #hlogin {
     margin-top: 4px;
     font-size: 14px;
-    text-align: center;
     margin-bottom: 0px;
+    margin-left: 8.8vw;
 }
 
 #formaLogin {
@@ -101,6 +102,16 @@ header nav ul li a span {
 
 #formaLogin {
     width: 20vw;
+    float: left;
+}
+
+p {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
