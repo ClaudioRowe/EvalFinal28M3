@@ -55,7 +55,7 @@ $(document).ready(function() {
     boardGrid = new Muuri(board, {
         layoutDuration: 400,
         layoutEasing: 'ease',
-        dragEnabled: true,
+        dragEnabled: false,
         dragSortHeuristics: {
             sortInterval: 0,
             minDragDistance: 0,
