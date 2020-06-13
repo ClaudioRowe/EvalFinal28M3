@@ -19,11 +19,19 @@ h1 {
     text-align: center;
 }
 
+#headins {
+    margin-bottom: 10vh;
+}
+
+.ins {
+    margin-bottom: 5vh;
+}
+
 .menu_bar {
     display: none;
 }
 
-header {
+header #headindex {
     width: 100%;
 }
 
@@ -194,6 +202,14 @@ footer p {
     border-radius: 3px 3px 0 0;
 }
 
+#multiDate {
+    margin-top: 5vh;
+}
+
+#titRut {
+    margin-top: 3vh;
+}
+
 @media (max-width: 600px) {
     .board-column-header {
         text-align: center;
@@ -253,15 +269,6 @@ footer p {
     margin-bottom: 0;
 }
 
-@media (max-width: 600px) {
-    .board-item-content p {
-        display: none;
-    }
-    .board-column {
-        width: 95%;
-    }
-}
-
 
 /* Modo de uso - Listas */
 
@@ -300,53 +307,139 @@ footer p {
 }
 
 .custom-fluid-height {
-    height: 130px;
+    height: 70px;
 }
 
 #ingreso,
 #password {
     height: 20px;
+    width: 200px;
     padding: 1px;
+    display: inline-flex;
 }
 
+
+/*#ingreso {
+    position: relative;
+    left: 0vw;
+}
+
+#password {
+    position: relative;
+    left: 0vw;
+}*/
+
 #ingresar {
-    padding: 0px;
-    margin: 0px;
-    height: 22px;
+    height: 20px;
     font-size: 13px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 #hlogin {
     margin-top: 4px;
     font-size: 14px;
     margin-bottom: 0px;
-    margin-left: 8.8vw;
+    margin-left: 48vw;
 }
 
 #formaLogin {
     margin: auto;
     background-color: grey;
-}
-
-#checkbox {
-    display: inline;
+    width: 799px;
 }
 
 #labRecordar {
-    text-align: left;
     font-size: 10px;
-    display: flex;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+
+#checkboxLog {
+    padding-top: 5px;
 }
 
 .inLogin {
     font-family: monospace;
     padding-left: 3px;
-    padding-right: 3px;
 }
 
-#formaLogin {
+.labLog {
+    font-size: 10px;
+}
+
+
+/*#formaLogin {
     width: 20vw;
     float: left;
+}*/
+
+.h2ins {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+h3 .h2ins {
+    margin-bottom: 5vh;
+}
+
+.hins {
+    margin-top: 5vh;
+    margin-right: 10vw;
+}
+
+.ins {
+    margin-top: 5vh;
+    width: 99vw;
+}
+
+#uno {
+    margin: auto;
+    display: inline;
+    max-width: 50%;
+    margin-left: 20vw;
+}
+
+#dos {
+    margin: auto;
+    display: inline;
+    max-width: 40%;
+    margin-left: 7vw;
+}
+
+#tres {
+    margin: auto;
+    display: inline;
+    max-width: 20%;
+    margin-left: 17vw;
+}
+
+h4 .hins {
+    display: inline;
+    margin-right: 18vw;
+    padding-top: 4vh;
+}
+
+#opGen {
+    margin-top: 4vh;
+}
+
+.lisGen {
+    list-style: none;
+}
+
+.lisGen li {
+    margin-top: 10vh;
+}
+
+@media (max-width: 600px) {
+    .board-item-content p {
+        display: none;
+    }
+    .board-column {
+        width: 95%;
+    }
 }
 
 

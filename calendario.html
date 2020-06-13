@@ -2,26 +2,59 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario físico</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="js/event-calendar-evo/evo-calendar/css/evo-calendar.css" />
+
     <!-- Optional Themes -->
     <link rel="stylesheet" href="js/event-calendar-evo/evo-calendar/css/evo-calendar.midnight-blue.css" />
     <link rel="stylesheet" href="js/event-calendar-evo/evo-calendar/css/evo-calendar.orange-coral.css" />
     <link rel="stylesheet" href="js/event-calendar-evo/evo-calendar/css/evo-calendar.royal-navy.css" />
+
     <!-- JavaScript -->
     <script src="js/event-calendar-evo/evo-calendar/js/evo-calendar.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="Slidebars-2.0.2/dev/slidebars.css">
+    <script src="Slidebars-2.0.2/dev/slidebars.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Hola</h1>
+        <h1>Calendario</h1>
     </header>
+
+    <p>Organiza tu tiempo de manera ágil y cómoda. Selecciona una fecha y visibiliza tus actividades diarias, ingresa a ella para agregar, eliminar, editar, crear rútinas, lo que necesites para hacer de tu tiempo algo más llevadero. </p>
+
     <div id="evoCalendar"></div>
+
+    <h2>Características</h2>
+
+    <h3>Familiaridad</h3>
+
+    <p>Buscamos que el calendario tenga un acceso tan cotidiano como mirar a un calendario hecho de papel.Queremos que la experiencia de utilizar la aplicación sea un análogo a redactar en un planificador lo mejor desarrollado y lo más óptimo posible.</p>
+
+    <h3>Simpleza</h3>
+
+    <p>Para que nuestro día se vea alivianado por su existencia y sea el preferido de nuestros usuarios, hemos diseñado una aplicación facil de manejar y con las características justas y necesarias, pero sin evitarnos el integrar lo que es útil.</p>
+
+    <h3>Utilidad</h3>
+
+    <p>Nuestro calendario apunta a ser el planficador por excelencia, algo que el mercado aún no se ha molestado en responder. Integramos el calendario, más el planificador y el creador de rutinas para crear la herramienta completa.</p>
+
+    <h3>Organiza tu vida con (título)</h3>
+
+    <p>Nuestra plataforma tiene todo lo necesario para que ingreses tus planes y no los pierdas por ninguna razón. Nuestro sistema de visión matutina y de alarmas está pensado para recordarte a tiempo prudente las actividades que tienes en tu día, y para
+        que no se te pase ninguna de ellas.</p>
 
     <script>
         $(document).ready(function() {

@@ -22,39 +22,32 @@
 </head>
 
 <body>
-    <div canvas="container">
-        <div class="wrapper">
+        <div canvas="container">
+            <div class="wrapper">
 
-            <header>
-                <div class="nav-content">
-                    <div class="menu_bar">
-                        <a href="#" class="bt-menu">Menú</a>
+                <header>
+                    <div class="nav-content">
+                        <div class="menu_bar">
+                            <a href="#" class="bt-menu">Menú</a>
+                        </div>
+                        <nav>
+                            <ul class="nav-list">
+                                <li><a href="/"><span ></span>Inicio</a></li>
+                                <li><a href="quienes-somos.html"><span ></span>Quiénes somos</a></li>
+                                <li><a href="lista.html"><span ></span>Listas</a></li>
+                                <li><a href="calendario.html"><span ></span>Calendario</a></li>
+                                <li><a href="#"><span ></span>Modo de uso</a></li>
+                                <li><a href="#"><span ></span>Ejemplo</a></li>
+                            </ul>
+                            <ul class="login">
+                                <li><a href="#" id="">Login</a></li>
+                            </ul>
+
+                        </nav>
                     </div>
-                    <nav>
-                        <ul class="nav-list">
-                            <li><a href="/"><span ></span>Inicio</a></li>
-                            <li><a href="quienes-somos.html"><span ></span>Quiénes somos</a></li>
-                            <li><a href="lista.html"><span ></span>Listas</a></li>
-                            <li><a href="calendario.html"><span ></span>Calendario</a></li>
-                            <li><a href="#"><span ></span>Rutinas</a></li>
-                            <div class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span ></span>Modo de uso</a>
-                                <div class="dropdown-menu">
-                                    <a href="lista-uso.html" class="dropdown-item">Listas</a>
-                                    <a href="#" class="dropdown-item">Calendario</a>
-                                </div>
-                            </div>
-                        </ul>
 
-                        <ul class="login">
-                            <li><a href="#" id="sld3">Login</a></li>
-                        </ul>
-
-                    </nav>
-                </div>
-
-            </header>
-
+                </header>
+            </div>
             <main class="container-fluid">
                 <div class="jumbotron">
                     <h1>Bienvenid@ a Calendario</h1>
@@ -79,19 +72,28 @@
     <div off-canvas="id-3 top push" class="custom-fluid-width custom-fluid-height">
         <container class="login" id="logIndex">
             <h4 id="hlogin">Login</h4>
-            <form class="card mb-1 box-shadow" id="formaLogin">
+            <form class="card box-shadow" id="formaLogin">
 
-                <!--<label for="ingreso">Usuario o e-mail</label><br>
-                    <label for="password">Password</label><br>
-                    <label for="recordar">Recordar clave</label>
-                -->
-                <input type="text" id="ingreso" name="ingreso" placeholder="Usuario o e-mail" class="inLogin">
-                <input type="password" id="password" name="password" placeholder="Password" class="inLogin">
 
-                <input type="submit" value="Ingresar" id="ingresar">
-                <label for="recordar" id="labRecordar">Recordar clave
-                <input type="checkbox" id="checkboxLog" name="recordar">
-            </label>
+                <div class="row justify-content-center">
+                    <div class="col-3 ">
+                        <label for="ingreso" class="labLog">Usuario o e-mail
+                        <input type="text" id="ingreso" name="ingreso" placeholder="Usuario o e-mail" class="inLogin"></label>
+                    </div>
+                    <div class="col-3 ">
+                        <label for="password" class="labLog">Password
+                        <input type="password" id="password" name="password" placeholder="Password" class="inLogin"></label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Ingresar" id="ingresar">
+                    </div>
+                    <div>
+                        <label for="recordar" id="labRecordar">Recordar clave
+                        <input type="checkbox" id="checkboxLog" name="recordar">
+                        </label>
+                    </div>
+                </div>
+
             </form>
         </container>
     </div>
