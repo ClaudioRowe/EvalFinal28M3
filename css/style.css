@@ -1,14 +1,22 @@
+/* Todos los archivos */
+
 * {
-    padding: 0;
-    margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
 h1 {
     text-align: center;
-    margin-top: 40px;
 }
 
 .menu_bar {
@@ -21,14 +29,29 @@ header {
 
 header nav {
     background: #2f79da;
-    z-index: 1000;
     max-width: 1000px;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-header nav ul {
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1000;
+    background: #2f79da;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -44,12 +67,200 @@ header nav ul li a {
     color: #fff;
     display: block;
     text-decoration: none;
-    padding: 20px;
+    padding: 8px;
 }
 
-header nav ul li a span {
-    margin-right: 10px;
+main {
+    padding: 15px;
 }
+
+.jumbotron p {
+    text-align: center;
+}
+
+main section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+
+/* Quiénes somos */
+
+.quienes-somos .integrantes {
+    display: flex;
+    flex-direction: column;
+}
+
+.integrantes>div {
+    width: 75%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.integrantes div:nth-child(2) {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    .integrantes>div {
+        width: 100%;
+    }
+}
+
+
+/* Tablero - Lista de tareas */
+
+.add-task {
+    width: 100%;
+    padding: 15px;
+}
+
+.add-task-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-task-form * {
+    margin-top: 15px;
+}
+
+.add-task-form input {
+    margin-right: 15px;
+}
+
+.task-details {
+    margin-top: 15px;
+}
+
+.task-details label {
+    margin-right: 15px;
+}
+
+.task-details #routine {
+    margin-right: 5px;
+}
+
+.board {
+    position: relative;
+    margin-left: 1%;
+}
+
+.board-column {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    margin: 0 1.5%;
+    background: #f0f0f0;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.board-column.muuri-item-releasing {
+    z-index: 2;
+}
+
+.board-column.muuri-item-dragging {
+    z-index: 3;
+    cursor: move;
+}
+
+.board-column-header {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+@media (max-width: 600px) {
+    .board-column-header {
+        text-align: center;
+    }
+}
+
+.board-column.todo .board-column-header {
+    background: #4A9FF9;
+}
+
+.board-column.working .board-column-header {
+    background: #f9944a;
+}
+
+.board-column.done .board-column-header {
+    background: #2ac06d;
+}
+
+.board-column-content {
+    position: relative;
+    border: 10px solid transparent;
+    min-height: 95px;
+}
+
+.board-item {
+    position: absolute;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.board-item.muuri-item-releasing {
+    z-index: 9998;
+}
+
+.board-item.muuri-item-dragging {
+    z-index: 9999;
+    cursor: move;
+}
+
+.board-item.muuri-item-hidden {
+    z-index: 0;
+}
+
+.board-item-content {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.board-item-content p {
+    font-size: 70%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .board-item-content p {
+        display: none;
+    }
+    .board-column {
+        width: 95%;
+    }
+}
+
+
+/* Login */
 
 .custom-fluid-width {
     width: 100%;
@@ -105,27 +316,25 @@ header nav ul li a span {
     float: left;
 }
 
-p {
-    padding-top: 30px;
-    width: 80%;
-    margin: auto;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
-}
 
-@media screen and (max-width: 800px) {
-    body {
-        padding-top: 80px;
+/* Media queries - Barra de navegación */
+
+@media screen and (max-width: 600px) {
+    header nav {
+        justify-content: flex-start;
+    }
+    .nav-content {
+        background-color: #2f79da;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
     }
     .menu_bar {
         display: block;
-        width: 100%;
-        position: fixed;
-        top: 0;
         background: #2f79da;
     }
-    .menu_bar .bt-menu {
+    .menu_bar .bt-menu,
+    .login a {
         display: block;
         padding: 20px;
         text-align: center;
@@ -139,23 +348,26 @@ p {
         float: right;
         font-size: 40px;
     }
-    header nav {
+    .nav-list {
         width: 40%;
         height: calc(100% - 80px);
         position: fixed;
         right: 100%;
         margin: 0;
-        overflow: scroll;
+        display: block;
     }
-    header nav ul li {
+    .nav-list li {
         display: block;
         border-bottom: 1px solid #ffffff;
     }
-    header nav ul li a {
+    .nav-list li a {
         display: block;
     }
     .custom-fluid-width {
         width: 45%;
+    }
+    .login li:hover {
+        background-color: #2f79da;
     }
     #formaLogin {
         width: 41vw;
