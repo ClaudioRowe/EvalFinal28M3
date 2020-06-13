@@ -199,6 +199,14 @@ footer p {
     border-radius: 3px 3px 0 0;
 }
 
+#multiDate {
+    margin-top: 5vh;
+}
+
+#titRut {
+    margin-top: 3vh;
+}
+
 @media (max-width: 600px) {
     .board-column-header {
         text-align: center;
@@ -256,15 +264,6 @@ footer p {
 .board-item-content p {
     font-size: 70%;
     margin-bottom: 0;
-}
-
-@media (max-width: 600px) {
-    .board-item-content p {
-        display: none;
-    }
-    .board-column {
-        width: 95%;
-    }
 }
 
 
@@ -343,8 +342,6 @@ footer p {
     float: left;
 }*/
 
-
-<<<<<<< HEAD
 .h2ins {
     text-align: center;
     margin-top: 5vh;
@@ -391,10 +388,28 @@ h4 .hins {
     padding-top: 4vh;
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        padding-top: 80px;
-=======
+#opGen {
+    margin-top: 4vh;
+}
+
+.lisGen {
+    list-style: none;
+}
+
+.lisGen li {
+    margin-top: 10vh;
+}
+
+@media (max-width: 600px) {
+    .board-item-content p {
+        display: none;
+    }
+    .board-column {
+        width: 95%;
+    }
+}
+
+
 /* Media queries - Barra de navegación */
 
 @media screen and (max-width: 600px) {
@@ -406,7 +421,6 @@ h4 .hins {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
->>>>>>> a895a352fb0a64a0601a8444b60cab2638477614
     }
     .menu_bar {
         display: block;
@@ -451,9 +465,4 @@ h4 .hins {
     #formaLogin {
         width: 41vw;
     }
-}
-
-
-}
-
 }
