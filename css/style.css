@@ -64,54 +64,73 @@ header nav ul li a span {
 }
 
 .custom-fluid-height {
-    height: 130px;
+    height: 70px;
 }
 
 #ingreso,
 #password {
     height: 20px;
+    width: 200px;
     padding: 1px;
+    display: inline-flex;
 }
 
+
+/*#ingreso {
+    position: relative;
+    left: 0vw;
+}
+
+#password {
+    position: relative;
+    left: 0vw;
+}*/
+
 #ingresar {
-    padding: 0px;
-    margin: 0px;
-    height: 22px;
+    height: 20px;
     font-size: 13px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 #hlogin {
     margin-top: 4px;
     font-size: 14px;
     margin-bottom: 0px;
-    margin-left: 8.8vw;
+    margin-left: 48vw;
 }
 
 #formaLogin {
     margin: auto;
     background-color: grey;
-}
-
-#checkbox {
-    display: inline;
+    width: 799px;
 }
 
 #labRecordar {
-    text-align: left;
     font-size: 10px;
-    display: flex;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+
+#checkboxLog {
+    padding-top: 5px;
 }
 
 .inLogin {
     font-family: monospace;
     padding-left: 3px;
-    padding-right: 3px;
 }
 
-#formaLogin {
+.labLog {
+    font-size: 10px;
+}
+
+
+/*#formaLogin {
     width: 20vw;
     float: left;
-}
+}*/
 
 p {
     padding-top: 30px;
@@ -214,4 +233,9 @@ h4 .hins {
     #formaLogin {
         width: 41vw;
     }
+}
+
+
+}
+
 }
