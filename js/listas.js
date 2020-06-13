@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // Variables para la ejecución del plugin Muuri
     var docElem = document.documentElement;
     var kanban = document.querySelector('.kanban-demo');
     var board = kanban.querySelector('.board');
@@ -7,6 +9,7 @@ $(document).ready(function() {
     var dragCounter = 0;
     var boardGrid;
 
+    //Inicialización del plugin Muuri en las columnas del tablero
     itemContainers.forEach(function(container) {
 
         var muuri = new Muuri(container, {
@@ -52,6 +55,7 @@ $(document).ready(function() {
 
     });
 
+    //Inicialización del plugin Muuri en el tablero principal
     boardGrid = new Muuri(board, {
         layoutDuration: 400,
         layoutEasing: 'ease',
@@ -68,4 +72,44 @@ $(document).ready(function() {
         dragReleaseEasing: 'ease'
     });
 
+    // Oculta el panel para agregar nueva actividad
+    $('.add-task-form').hide();
+
+    // Oculta el panel para agregar detalles a la actividad
+    $('.task-details').hide();
+
+    // Otorga funcionalidad al botón de nueva actividad
+    $('.add-task>button').click(function() {
+        $('.add-task-form').slideToggle('fast');
+    });
+
+    // Otorga funcionalidad al botón de agregar
+    $('.add-task-form>button').click(function() {
+        let text = $('#add').val();
+        if (text) {
+            let newItem = document.createElement('div');
+            let content = '<div class="board-item"><div class="board-item-content">' + text + '</div></div>';
+            newItem.innerHTML = content;
+            newItem = newItem.firstChild;
+            columnGrids[0].add(newItem);
+            $('.board-item').click(function() {
+                $('.task-details').slideDown('fast');
+            });
+            columnGrids.forEach(function(muuri) {
+                muuri.refreshItems();
+            });
+            $('#add').val('');
+            $('.add-task-form').slideUp('fast');
+        }
+    });
+
+    // Otorga funcionalidad al hacer (doble) click en las actividades del tablero
+    $('.board-item').click(function() {
+        $('.task-details').slideDown('fast');
+    });
+
+    // Otorga funcionalidad al botón de aceptar, del panel de detalles de actividad
+    $('#add-details').click(function() {
+        $('.task-details').slideUp('fast');
+    });
 });

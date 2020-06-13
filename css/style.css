@@ -1,11 +1,13 @@
 /* Todos los archivos */
 
 * {
-    padding: 0;
-    margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .wrapper {
@@ -15,27 +17,46 @@
 
 h1 {
     text-align: center;
-    margin-top: 40px;
+}
+
+#headins {
+    margin-bottom: 10vh;
+}
+
+.ins {
+    margin-bottom: 5vh;
 }
 
 .menu_bar {
     display: none;
 }
 
-header {
+header #headindex {
     width: 100%;
 }
 
 header nav {
     background: #2f79da;
-    z-index: 1000;
     max-width: 1000px;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-header nav ul {
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1000;
+    background: #2f79da;
+}
+
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -43,20 +64,47 @@ header nav ul li {
     position: relative;
 }
 
-header nav ul li:hover {
+header nav ul li:hover,
+.dropdown-menu a:hover {
     background: #ffffff;
 }
 
-header nav ul li a {
+.dropdown-menu {
+    background-color: #2f79da;
+}
+
+header nav ul li a,
+.dropdown a {
     color: #fff;
     display: block;
     text-decoration: none;
-    padding: 20px;
+    padding: 8px;
 }
 
-header nav ul li a span {
-    margin-right: 10px;
+main {
+    padding: 15px;
 }
+
+.jumbotron p {
+    text-align: center;
+}
+
+main section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
 
 /* Quiénes somos */
 
@@ -83,7 +131,39 @@ header nav ul li a span {
     }
 }
 
-/* Tablero */
+
+/* Tablero - Lista de tareas */
+
+.add-task {
+    width: 100%;
+    padding: 15px;
+}
+
+.add-task-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-task-form * {
+    margin-top: 15px;
+}
+
+.add-task-form input {
+    margin-right: 15px;
+}
+
+.task-details {
+    margin-top: 15px;
+}
+
+.task-details label {
+    margin-right: 15px;
+}
+
+.task-details #routine {
+    margin-right: 5px;
+}
 
 .board {
     position: relative;
@@ -120,6 +200,14 @@ header nav ul li a span {
     background: #333;
     color: #fff;
     border-radius: 3px 3px 0 0;
+}
+
+#multiDate {
+    margin-top: 5vh;
+}
+
+#titRut {
+    margin-top: 3vh;
 }
 
 @media (max-width: 600px) {
@@ -181,18 +269,37 @@ header nav ul li a span {
     margin-bottom: 0;
 }
 
-@media (max-width: 600px) {
-    .board-item-content {
-        text-align: center;
+
+/* Modo de uso - Listas */
+
+.uso .row {
+    align-items: center;
+}
+
+.img-container {
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container img {
+    width: 100%;
+}
+
+@media screen and (max-width: 577px) {
+    .uso .row {
+        flex-direction: column-reverse;
     }
-    .board-item-content p {
-        display: none;
+    .uso .img-wrapper {
+        margin: auto;
     }
-    .board-column {
-        width: 95%;
+    .content-container p {
+        margin-top: 16px;
+        padding: 8px;
     }
 }
-  
+
+
 /* Login */
 
 .custom-fluid-width {
@@ -200,78 +307,160 @@ header nav ul li a span {
 }
 
 .custom-fluid-height {
-    height: 130px;
+    height: 70px;
 }
 
 #ingreso,
 #password {
     height: 20px;
+    width: 200px;
     padding: 1px;
+    display: inline-flex;
 }
 
+
+/*#ingreso {
+    position: relative;
+    left: 0vw;
+}
+
+#password {
+    position: relative;
+    left: 0vw;
+}*/
+
 #ingresar {
-    padding: 0px;
-    margin: 0px;
-    height: 22px;
+    height: 20px;
     font-size: 13px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 #hlogin {
     margin-top: 4px;
     font-size: 14px;
     margin-bottom: 0px;
-    margin-left: 8.8vw;
+    margin-left: 48vw;
 }
 
 #formaLogin {
     margin: auto;
     background-color: grey;
-}
-
-#checkbox {
-    display: inline;
+    width: 799px;
 }
 
 #labRecordar {
-    text-align: left;
     font-size: 10px;
-    display: flex;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+
+#checkboxLog {
+    padding-top: 5px;
 }
 
 .inLogin {
     font-family: monospace;
     padding-left: 3px;
-    padding-right: 3px;
 }
 
-#formaLogin {
+.labLog {
+    font-size: 10px;
+}
+
+
+/*#formaLogin {
     width: 20vw;
     float: left;
+}*/
+
+.h2ins {
+    text-align: center;
+    margin-top: 5vh;
 }
 
-/* Regla poco específica, revisar y agregar selector correcto */
-/* 
-p {
-    padding-top: 30px;
-    width: 80%;
-    margin: auto;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
+h3 .h2ins {
+    margin-bottom: 5vh;
 }
-*/
-@media screen and (max-width: 800px) {
-    body {
-        padding-top: 80px;
+
+.hins {
+    margin-top: 5vh;
+    margin-right: 10vw;
+}
+
+.ins {
+    margin-top: 5vh;
+    width: 99vw;
+}
+
+#uno {
+    margin: auto;
+    display: inline;
+    max-width: 50%;
+    margin-left: 20vw;
+}
+
+#dos {
+    margin: auto;
+    display: inline;
+    max-width: 40%;
+    margin-left: 7vw;
+}
+
+#tres {
+    margin: auto;
+    display: inline;
+    max-width: 20%;
+    margin-left: 17vw;
+}
+
+h4 .hins {
+    display: inline;
+    margin-right: 18vw;
+    padding-top: 4vh;
+}
+
+#opGen {
+    margin-top: 4vh;
+}
+
+.lisGen {
+    list-style: none;
+}
+
+.lisGen li {
+    margin-top: 10vh;
+}
+
+@media (max-width: 600px) {
+    .board-item-content p {
+        display: none;
+    }
+    .board-column {
+        width: 95%;
+    }
+}
+
+
+/* Media queries - Barra de navegación */
+
+@media screen and (max-width: 600px) {
+    header nav {
+        justify-content: flex-start;
+    }
+    .nav-content {
+        background-color: #2f79da;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
     }
     .menu_bar {
         display: block;
-        width: 100%;
-        position: fixed;
-        top: 0;
         background: #2f79da;
     }
-    .menu_bar .bt-menu {
+    .menu_bar .bt-menu,
+    .login a {
         display: block;
         padding: 20px;
         text-align: center;
@@ -285,23 +474,26 @@ p {
         float: right;
         font-size: 40px;
     }
-    header nav {
+    .nav-list {
         width: 40%;
         height: calc(100% - 80px);
         position: fixed;
         right: 100%;
         margin: 0;
-        overflow: scroll;
+        display: block;
     }
-    header nav ul li {
+    .nav-list li {
         display: block;
         border-bottom: 1px solid #ffffff;
     }
-    header nav ul li a {
+    .nav-list li a {
         display: block;
     }
     .custom-fluid-width {
         width: 45%;
+    }
+    .login li:hover {
+        background-color: #2f79da;
     }
     #formaLogin {
         width: 41vw;
