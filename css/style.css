@@ -29,19 +29,29 @@ header {
 
 header nav {
     background: #2f79da;
-    z-index: 1000;
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    overflow: hidden !important;
-}
-
-header nav ul {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1000;
+    background: #2f79da;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.login {
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -306,13 +316,25 @@ footer p {
     float: left;
 }
 
+
+/* Media queries - Barra de navegación */
+
 @media screen and (max-width: 600px) {
+    header nav {
+        justify-content: flex-start;
+    }
+    .nav-content {
+        background-color: #2f79da;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
     .menu_bar {
         display: block;
-        width: 100%;
         background: #2f79da;
     }
-    .menu_bar .bt-menu {
+    .menu_bar .bt-menu,
+    .login a {
         display: block;
         padding: 20px;
         text-align: center;
@@ -326,25 +348,26 @@ footer p {
         float: right;
         font-size: 40px;
     }
-    header nav {
+    .nav-list {
         width: 40%;
         height: calc(100% - 80px);
         position: fixed;
         right: 100%;
         margin: 0;
-    }
-    header nav ul {
         display: block;
     }
-    header nav ul li {
+    .nav-list li {
         display: block;
         border-bottom: 1px solid #ffffff;
     }
-    header nav ul li a {
+    .nav-list li a {
         display: block;
     }
     .custom-fluid-width {
         width: 45%;
+    }
+    .login li:hover {
+        background-color: #2f79da;
     }
     #formaLogin {
         width: 41vw;
