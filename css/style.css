@@ -1,11 +1,13 @@
 /* Todos los archivos */
 
 * {
-    padding: 0;
-    margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .wrapper {
@@ -15,7 +17,6 @@
 
 h1 {
     text-align: center;
-    margin-top: 40px;
 }
 
 .menu_bar {
@@ -30,12 +31,17 @@ header nav {
     background: #2f79da;
     z-index: 1000;
     max-width: 1000px;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    margin: auto;
+    overflow: hidden !important;
 }
 
 header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
+    margin: 0;
 }
 
 header nav ul li {
@@ -51,11 +57,31 @@ header nav ul li a {
     color: #fff;
     display: block;
     text-decoration: none;
-    padding: 20px;
+    padding: 8px;
 }
 
-header nav ul li a span {
-    margin-right: 10px;
+main {
+    padding: 15px;
+}
+
+.jumbotron p {
+    text-align: center;
+}
+
+main section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 3px;
 }
 
 
@@ -85,7 +111,38 @@ header nav ul li a span {
 }
 
 
-/* Tablero */
+/* Tablero - Lista de tareas */
+
+.add-task {
+    width: 100%;
+    padding: 15px;
+}
+
+.add-task-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-task-form * {
+    margin-top: 15px;
+}
+
+.add-task-form input {
+    margin-right: 15px;
+}
+
+.task-details {
+    margin-top: 15px;
+}
+
+.task-details label {
+    margin-right: 15px;
+}
+
+.task-details #routine {
+    margin-right: 5px;
+}
 
 .board {
     position: relative;
@@ -249,30 +306,10 @@ header nav ul li a span {
     float: left;
 }
 
-
-/* Regla poco específica, revisar y agregar selector correcto */
-
-
-/* 
-p {
-    padding-top: 30px;
-    width: 80%;
-    margin: auto;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
-}
-*/
-
-@media screen and (max-width: 800px) {
-    body {
-        padding-top: 80px;
-    }
+@media screen and (max-width: 600px) {
     .menu_bar {
         display: block;
         width: 100%;
-        position: fixed;
-        top: 0;
         background: #2f79da;
     }
     .menu_bar .bt-menu {
@@ -295,7 +332,9 @@ p {
         position: fixed;
         right: 100%;
         margin: 0;
-        overflow: scroll;
+    }
+    header nav ul {
+        display: block;
     }
     header nav ul li {
         display: block;
