@@ -29,74 +29,76 @@
 </head>
 
 <body>
-    <header>
-        <h1>Calendario</h1>
-    </header>
+    <div canvas="container">
+        <header>
+            <h1>Calendario</h1>
+        </header>
 
-    <p>Organiza tu tiempo de manera ágil y cómoda. Selecciona una fecha y visibiliza tus actividades diarias, ingresa a ella para agregar, eliminar, editar, crear rútinas, lo que necesites para hacer de tu tiempo algo más llevadero. </p>
+        <p>Organiza tu tiempo de manera ágil y cómoda. Selecciona una fecha y visibiliza tus actividades diarias, ingresa a ella para agregar, eliminar, editar, crear rútinas, lo que necesites para hacer de tu tiempo algo más llevadero. </p>
 
-    <div id="evoCalendar"></div>
+        <div id="evoCalendar"></div>
 
-    <h2>Características</h2>
+        <h2>Características</h2>
 
-    <h3>Familiaridad</h3>
+        <h3>Familiaridad</h3>
 
-    <p>Buscamos que el calendario tenga un acceso tan cotidiano como mirar a un calendario hecho de papel.Queremos que la experiencia de utilizar la aplicación sea un análogo a redactar en un planificador lo mejor desarrollado y lo más óptimo posible.</p>
+        <p>Buscamos que el calendario tenga un acceso tan cotidiano como mirar a un calendario hecho de papel.Queremos que la experiencia de utilizar la aplicación sea un análogo a redactar en un planificador lo mejor desarrollado y lo más óptimo posible.</p>
 
-    <h3>Simpleza</h3>
+        <h3>Simpleza</h3>
 
-    <p>Para que nuestro día se vea alivianado por su existencia y sea el preferido de nuestros usuarios, hemos diseñado una aplicación facil de manejar y con las características justas y necesarias, pero sin evitarnos el integrar lo que es útil.</p>
+        <p>Para que nuestro día se vea alivianado por su existencia y sea el preferido de nuestros usuarios, hemos diseñado una aplicación facil de manejar y con las características justas y necesarias, pero sin evitarnos el integrar lo que es útil.</p>
 
-    <h3>Utilidad</h3>
+        <h3>Utilidad</h3>
 
-    <p>Nuestro calendario apunta a ser el planficador por excelencia, algo que el mercado aún no se ha molestado en responder. Integramos el calendario, más el planificador y el creador de rutinas para crear la herramienta completa.</p>
+        <p>Nuestro calendario apunta a ser el planficador por excelencia, algo que el mercado aún no se ha molestado en responder. Integramos el calendario, más el planificador y el creador de rutinas para crear la herramienta completa.</p>
 
-    <h3>Organiza tu vida con (título)</h3>
+        <h3>Organiza tu vida con (título)</h3>
 
-    <p>Nuestra plataforma tiene todo lo necesario para que ingreses tus planes y no los pierdas por ninguna razón. Nuestro sistema de visión matutina y de alarmas está pensado para recordarte a tiempo prudente las actividades que tienes en tu día, y para
-        que no se te pase ninguna de ellas.</p>
+        <p>Nuestra plataforma tiene todo lo necesario para que ingreses tus planes y no los pierdas por ninguna razón. Nuestro sistema de visión matutina y de alarmas está pensado para recordarte a tiempo prudente las actividades que tienes en tu día, y
+            para que no se te pase ninguna de ellas.</p>
 
-    <script>
-        $(document).ready(function() {
-            myEvents = [
+        <script>
+            $(document).ready(function() {
+                myEvents = [
 
-                {
-                    name: "New Year",
-                    date: "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-                    type: "holiday",
-                    everyYear: true
-                },
+                    {
+                        name: "New Year",
+                        date: "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
+                        type: "holiday",
+                        everyYear: true
+                    },
 
-                {
-                    name: "Valentine's Day",
-                    date: "Fri Feb 14 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-                    type: "holiday",
-                    everyYear: true
-                },
+                    {
+                        name: "Valentine's Day",
+                        date: "Fri Feb 14 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
+                        type: "holiday",
+                        everyYear: true
+                    },
 
-                {
-                    name: "Birthday",
-                    date: "February/3/2020",
-                    type: "birthday"
-                }, {
-                    name: "Author's Birthday",
-                    date: "February/15/2020",
-                    type: "birthday",
-                    everyYear: true
-                }, {
-                    name: "Holiday",
-                    date: "February/15/2020",
-                    type: "event"
-                },
+                    {
+                        name: "Birthday",
+                        date: "February/3/2020",
+                        type: "birthday"
+                    }, {
+                        name: "Author's Birthday",
+                        date: "February/15/2020",
+                        type: "birthday",
+                        everyYear: true
+                    }, {
+                        name: "Holiday",
+                        date: "February/15/2020",
+                        type: "event"
+                    },
 
-            ]
+                ]
 
-            $('#evoCalendar').evoCalendar({
-                calendarEvents: myEvents
+                $('#evoCalendar').evoCalendar({
+                    calendarEvents: myEvents
+                });
+
             });
-
-        });
-    </script>
+        </script>
+    </div>
 </body>
 
 </html>
