@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,33 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .uso .row {
+            align-items: center;
+        }
+        
+        .img-container {
+            width: 90%;
+            margin: auto;
+        }
+        
+        .img-container img {
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 577px) {
+            .uso .row {
+                flex-direction: column-reverse;
+            }
+            .uso .img-wrapper {
+                margin: auto;
+            }
+            .content-container p {
+                margin-top: 16px;
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,11 +47,55 @@
             <h1>Uso de las listas</h1>
         </header>
         <main>
-            <div>
-                <p>Para crear una nueva actividad, presiona Nueva actividad. Luego, escribe el nombre de la actividad y pulsa Agregar.</p>
-                <p>Para agregar detalles a la actividad recién creada, has click en ella y completa los campos que necesites. Puedes agregar detalles, fecha de inicio y de término, o categoría.</p>
-                <p>También puedes elegir si quieres que se agregue a tus rutinas. Al hacer esto, debes especificar si quieres que la actividad se repita diariamente, semanalmente, algunos días en concreto, o en un patrón personalizado.</p>
-                <p>Puedes ordenar tu lista de tareas simplemente arrastrando la actividad y soltándola en la posición que desees.</p>
+            <div class="container-fluid uso">
+                <div class="row my-3">
+                    <div class="col-11 col-sm-6 img-wrapper">
+                        <div class="img-container">
+                            <img src="img/uso-listas-01.png" alt="Agregar actividades" class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 content-wrapper">
+                        <div class="content-container">
+                            <p>Para crear una nueva actividad, presiona Nueva actividad. Luego, escribe el nombre de la actividad y pulsa Agregar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-11 col-sm-6 img-wrapper">
+                        <div class="img-container">
+                            <img src="img/uso-listas-02.png" alt="Agregar detalles" class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="content-container">
+                            <p>Para agregar detalles a la actividad recién creada, has doble click en ella y completa los campos que necesites. Puedes agregar detalles, fecha de inicio y de término, o categoría.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-11 col-sm-6 img-wrapper">
+                        <div class="img-container">
+                            <img src="img/uso-listas-03.png" alt="Agregar a rutinas" class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="content-container">
+                            <p>También puedes elegir si quieres que se agregue a tus rutinas. Al hacer esto, la actividad se agregará a la sección de rutinas, donde podrás elegir con qué frecuencia se repetirá.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-11 col-sm-6 img-wrapper">
+                        <div class="img-container">
+                            <img src="img/uso-listas-04.png" alt="Ordenar actividades" class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="content-container">
+                            <p>Puedes ordenar tu lista de tareas simplemente arrastrando la actividad y soltándola en la posición que desees.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
