@@ -8,7 +8,33 @@
 
 body {
     margin: 0;
+    background-color: rgb(12, 113, 123);
 }
+
+#index {
+    background-color: rgb(12, 113, 123);
+}
+
+#calendario {
+    background-color: rgb(249, 172, 152);
+}
+
+#calendario p,
+#calendario h1,
+#calendario h2,
+#calendario h3 {
+    text-align: center;
+    margin-top: 4vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*#evoCalendar {
+    width: 80%;
+    height: 80%;
+}*/
 
 .wrapper {
     max-width: 800px;
@@ -125,12 +151,6 @@ footer p {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 500px) {
-    .integrantes>div {
-        width: 100%;
-    }
-}
-
 
 /* Tablero - Lista de tareas */
 
@@ -210,12 +230,6 @@ footer p {
     margin-top: 3vh;
 }
 
-@media (max-width: 600px) {
-    .board-column-header {
-        text-align: center;
-    }
-}
-
 .board-column.todo .board-column-header {
     background: #4A9FF9;
 }
@@ -286,30 +300,16 @@ footer p {
     width: 100%;
 }
 
-@media screen and (max-width: 577px) {
-    .uso .row {
-        flex-direction: column-reverse;
-    }
-    .uso .img-wrapper {
-        margin: auto;
-    }
-    .content-container p {
-        margin-top: 16px;
-        padding: 8px;
-    }
+
 }
 
-
 /* Login */
-
 .custom-fluid-width {
     width: 100%;
 }
-
 .custom-fluid-height {
     height: 70px;
 }
-
 #ingreso,
 #password {
     height: 20px;
@@ -317,7 +317,6 @@ footer p {
     padding: 1px;
     display: inline-flex;
 }
-
 
 /*#ingreso {
     position: relative;
@@ -328,7 +327,6 @@ footer p {
     position: relative;
     left: 0vw;
 }*/
-
 #ingresar {
     height: 20px;
     font-size: 13px;
@@ -336,129 +334,112 @@ footer p {
     margin-top: 15px;
     margin-left: 15px;
 }
-
 #hlogin {
     margin-top: 4px;
     font-size: 14px;
     margin-bottom: 0px;
     margin-left: 48vw;
 }
-
 #formaLogin {
     margin: auto;
     background-color: grey;
     width: 799px;
 }
-
 #labRecordar {
     font-size: 10px;
     margin-top: 18px;
     margin-left: 15px;
 }
-
 #checkboxLog {
     padding-top: 5px;
 }
-
 .inLogin {
     font-family: monospace;
     padding-left: 3px;
 }
-
 .labLog {
     font-size: 10px;
 }
-
 
 /*#formaLogin {
     width: 20vw;
     float: left;
 }*/
-
 .h2ins {
     text-align: center;
     margin-top: 5vh;
 }
-
 h3 .h2ins {
     margin-bottom: 5vh;
 }
-
 .hins {
     margin-top: 5vh;
     margin-right: 10vw;
 }
-
 .ins {
     margin-top: 5vh;
     width: 99vw;
 }
-
 #uno {
     margin: auto;
     display: inline;
     max-width: 50%;
     margin-left: 20vw;
 }
-
 #dos {
     margin: auto;
     display: inline;
     max-width: 40%;
     margin-left: 7vw;
 }
-
 #tres {
     margin: auto;
     display: inline;
     max-width: 20%;
     margin-left: 17vw;
 }
-
 h4 .hins {
     display: inline;
     margin-right: 18vw;
     padding-top: 4vh;
 }
-
 #opGen {
     margin-top: 4vh;
 }
-
 .lisGen {
     list-style: none;
 }
-
 .lisGen li {
     margin-top: 10vh;
 }
-
-@media (max-width: 600px) {
-    .board-item-content p {
-        display: none;
-    }
-    .board-column {
-        width: 95%;
+#bottom,
+#top {
+    margin-bottom: 10vh;
+}
+@media screen and (max-width: 500px) {
+    .integrantes>div {
+        width: 100%;
     }
 }
 
-
 /* Media queries - Barra de navegación */
-
 @media screen and (max-width: 600px) {
     header nav {
         justify-content: flex-start;
     }
+    
     .nav-content {
         background-color: #2f79da;
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
+    
     .menu_bar {
         display: block;
         background: #2f79da;
     }
+    
     .menu_bar .bt-menu,
     .login a {
         display: block;
@@ -470,10 +451,12 @@ h4 .hins {
         font-weight: bold;
         text-decoration: none;
     }
+    
     .menu_bar span {
         float: right;
         font-size: 40px;
     }
+    
     .nav-list {
         width: 40%;
         height: calc(100% - 80px);
@@ -482,20 +465,115 @@ h4 .hins {
         margin: 0;
         display: block;
     }
+    
     .nav-list li {
         display: block;
         border-bottom: 1px solid #ffffff;
     }
+    
     .nav-list li a {
         display: block;
     }
-    .custom-fluid-width {
-        width: 45%;
-    }
+    
     .login li:hover {
         background-color: #2f79da;
     }
-    #formaLogin {
+    /*#formaLogin {
         width: 41vw;
+    }*/
+    
+    .board-item-content p {
+        display: none;
+    }
+    
+    .board-column {
+        width: 95%;
+    }
+    
+    .uso .row {
+        flex-direction: column-reverse;
+    }
+    
+    .uso .img-wrapper {
+        margin: auto;
+    }
+    
+    .content-container p {
+        margin-top: 16px;
+        padding: 8px;
+    }
+    
+    .board-column-header {
+        text-align: center;
+    }
+    
+    .imgins {
+        display: block;
+    }
+    
+    #dos,
+    #tres {
+        width: 80%;
+    }
+    
+    .hins {
+        font-size: 10px;
+        text-align: justify;
+        display: block;
+    }
+    
+    #ingreso,
+    #password {
+        height: 20px;
+        width: 100px;
+        padding: 1px;
+        display: block;
+    }
+    
+    .labLog {
+        position: relative;
+        right: 100px;
+    }
+    
+    #labPas {
+        right: 203px;
+    }
+    
+    #ingresar {
+        position: relative;
+        right: 300px;
+        width: 80px;
+    }
+    
+    #checkRec {
+        display: none;
+    }
+}
+@media screen and (max-width: 350px) {
+    #ingreso,
+    #password {
+        height: 20px;
+        width: 100px;
+        padding: 1px;
+        display: block;
+    }
+    
+    .labLog {
+        position: absolute;
+        right: 240px;
+    }
+    
+    #labPas {
+        right: 340px;
+    }
+    
+    #ingresar {
+        position: relative;
+        right: 350px;
+        width: 80px;
+    }
+    
+    #checkRec {
+        display: none;
     }
 }
