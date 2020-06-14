@@ -135,6 +135,20 @@ footer p {
     margin-bottom: 3px;
 }
 
+.descLista {
+    color: rgb(12, 113, 123);
+}
+
+.titLista {
+    color: rgb(47, 142, 206);
+}
+
+.desc3,
+.h2ins,
+.hins {
+    color: rgb(249, 172, 152);
+}
+
 
 /* Quiénes somos */
 
@@ -307,40 +321,19 @@ footer p {
 
 /* Login */
 
+#ingreso,
+#password,
+#ingresar {
+    width: 400px;
+    align-items: center;
+}
+
 .custom-fluid-width {
     width: 100%;
 }
 
 .custom-fluid-height {
-    height: 70px;
-}
-
-#ingreso,
-#password {
-    height: 20px;
-    width: 200px;
-    padding: 1px;
-    display: inline-flex;
-}
-
-
-/*#ingreso {
-    position: relative;
-    left: 0vw;
-}
-
-#password {
-    position: relative;
-    left: 0vw;
-}*/
-
-#ingresar {
-    height: 20px;
-    font-size: 12px;
-    width: 100px;
-    margin-top: 15px;
-    margin-left: 15px;
-    line-height: 1px;
+    height: 150px;
 }
 
 #hlogin {

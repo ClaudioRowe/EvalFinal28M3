@@ -24,6 +24,35 @@
 </head>
 
 <body>
+    <header>
+        <div class="nav-content">
+            <div class="menu_bar">
+                <a href="#" class="bt-menu">Menú</a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/"><span ></span>Inicio</a></li>
+                    <li><a href="quienes-somos.html"><span ></span>Quiénes somos</a></li>
+                    <li><a href="lista.html"><span ></span>Listas</a></li>
+                    <li><a href="calendario.html"><span ></span>Calendario</a></li>
+                    <li><a href="#"><span ></span>Rutinas</a></li>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span ></span>Modo de uso</a>
+                        <div class="dropdown-menu">
+                            <a href="lista-uso.html" class="dropdown-item">Listas</a>
+                            <a href="#" class="dropdown-item">Calendario</a>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="login">
+                    <li><a href="#" id="sld3">Login</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
     <div canvas="container">
 
         <h1 id="titRut">Generador de rutinas</h1>
@@ -95,6 +124,12 @@
             addDates: [date.setDate(14), date.setDate(19)]
         });
     </script>
+
+
+    <footer class="container-fluid">
+        <p>Desarrollado por: Claudio Torres, Pamela Machino y Jaime Reyes</p>
+        <p>Junio 2020, Todos los derechos reservados.</p>
+    </footer>
 
     <div off-canvas="id-3 top push" class="custom-fluid-width custom-fluid-height">
         <container class="login" id="logIndex">
